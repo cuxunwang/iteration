@@ -17,23 +17,23 @@ y = rnorm(n = 30, mean = 24, sd = 2.3)
 (x - mean(x)) / sd(x)
 ```
 
-    ##  [1]  1.19285725 -0.10735856 -0.08279836 -0.64884733  1.21777952
-    ##  [6]  1.12778563 -1.07965247 -1.09536301 -0.57922079 -1.11204332
-    ## [11] -0.25078009  0.28459688 -1.88181598 -1.88376730 -1.26729361
-    ## [16]  1.39050728  0.15697047  0.10692570  1.35756803 -0.01394694
-    ## [21] -0.92452959  0.69144163 -0.76103946  1.38690227 -0.07530296
-    ## [26]  0.05537537  1.06472658  1.11297094  1.14100519 -0.52365295
+    ##  [1] -0.53018406  1.82889219 -0.49462173  1.68962891  0.10141997
+    ##  [6]  0.90526034  1.23176929 -1.95445038  1.36491721  1.00139943
+    ## [11] -0.98863533 -0.28094787 -0.81992891 -0.04359951 -0.31127675
+    ## [16]  1.21014964  0.30656271  0.17525660  0.59648866  0.01433448
+    ## [21]  0.13748908 -2.05258435  0.01109753  0.03129960 -1.45944004
+    ## [26] -0.90505543 -1.39906867 -0.08891454  0.18730104  0.53544092
 
 ``` r
 (x_again - mean(x_again)) / sd(x_again)
 ```
 
-    ##  [1] -0.04106804  0.67930116  1.73742361 -0.39677886  0.47382982
-    ##  [6] -0.68741949  0.51051325 -2.12335715  0.58564921 -1.11432446
-    ## [11] -0.38038502 -1.11924779  0.16589509  1.30489463 -0.90260002
-    ## [16] -0.57499737  1.92706796  1.49068166  0.75664072  0.07308677
-    ## [21]  0.69258966  0.06327130 -1.22331577 -0.70124456 -0.48982338
-    ## [26]  0.84456240 -0.59954394 -1.68835507  0.92370070 -0.18664700
+    ##  [1] -0.42813931 -0.28305766  1.62471686 -0.60547198  0.79640762
+    ##  [6] -0.22541788  0.38853353 -0.07842967 -2.23471296  0.09482128
+    ## [11] -0.33141255 -1.64290375  1.39958055  0.31892952 -1.83458816
+    ## [16]  1.88381922 -0.67685929  1.11013887 -0.71324018 -1.18028214
+    ## [21]  0.95629701 -0.14132222  0.68669884  0.39967280  0.61094123
+    ## [26]  1.11942068 -0.25017526  0.34269363 -1.06535308 -0.04130557
 
 Now a function.
 
@@ -57,12 +57,12 @@ Try out the function.
 z_score(x_arg = y)
 ```
 
-    ##  [1]  1.5016878614 -0.3070101324 -1.9722572220 -1.3422810113 -1.6516519515
-    ##  [6]  0.3525460286 -0.1026500382 -0.0129889193  0.5529659982 -0.7107822853
-    ## [11]  0.7240088814  0.6006949556 -0.0106187912  2.0321481864  0.9187248276
-    ## [16] -1.7033545823  0.9499861694 -0.3349889585 -0.0007036318 -0.0860493308
-    ## [21]  0.4665968497  0.3012172279 -0.7309954551  0.5616548583  0.4654536248
-    ## [26] -1.7084016144  1.3877738931  0.8038944365 -0.7813771985 -0.1632426764
+    ##  [1]  0.35347060 -0.52995777  0.87606369  2.67923955  0.32612882
+    ##  [6] -0.20160236 -0.15897095  1.17046193  0.06848394  0.22892412
+    ## [11] -0.90045391 -1.14765077  0.39618094 -0.40856975  2.03978863
+    ## [16] -0.36512110  0.74391999  1.53459644 -0.26437196 -0.65397681
+    ## [21] -1.37929443 -0.59471098 -1.08174602 -0.08718551 -0.54668796
+    ## [26] -0.83247317 -0.80586497  0.43266982 -1.71796338  0.82667334
 
 ``` r
 z_score(x_arg = 3)
@@ -114,18 +114,18 @@ mean_and_sd(input_x = y)
 ```
 
     ## $mean_input
-    ## [1] 24.27883
+    ## [1] 23.98122
     ## 
     ## $sd_input
-    ## [1] 2.314149
+    ## [1] 2.639242
     ## 
     ## $z_score
-    ##  [1]  1.5016878614 -0.3070101324 -1.9722572220 -1.3422810113 -1.6516519515
-    ##  [6]  0.3525460286 -0.1026500382 -0.0129889193  0.5529659982 -0.7107822853
-    ## [11]  0.7240088814  0.6006949556 -0.0106187912  2.0321481864  0.9187248276
-    ## [16] -1.7033545823  0.9499861694 -0.3349889585 -0.0007036318 -0.0860493308
-    ## [21]  0.4665968497  0.3012172279 -0.7309954551  0.5616548583  0.4654536248
-    ## [26] -1.7084016144  1.3877738931  0.8038944365 -0.7813771985 -0.1632426764
+    ##  [1]  0.35347060 -0.52995777  0.87606369  2.67923955  0.32612882
+    ##  [6] -0.20160236 -0.15897095  1.17046193  0.06848394  0.22892412
+    ## [11] -0.90045391 -1.14765077  0.39618094 -0.40856975  2.03978863
+    ## [16] -0.36512110  0.74391999  1.53459644 -0.26437196 -0.65397681
+    ## [21] -1.37929443 -0.59471098 -1.08174602 -0.08718551 -0.54668796
+    ## [26] -0.83247317 -0.80586497  0.43266982 -1.71796338  0.82667334
 
 ## Multiple inputs
 
@@ -169,7 +169,7 @@ sim_regression(n = 3000, beta0 = 17, beta1 = -3)
     ## # A tibble: 1 x 2
     ##   beta0_hat beta1_hat
     ##       <dbl>     <dbl>
-    ## 1      17.0     -3.00
+    ## 1      17.0     -2.96
 
 ``` r
 sim_regression(3000, 17, -3)
@@ -178,7 +178,7 @@ sim_regression(3000, 17, -3)
     ## # A tibble: 1 x 2
     ##   beta0_hat beta1_hat
     ##       <dbl>     <dbl>
-    ## 1      17.0     -2.99
+    ## 1      17.0     -2.98
 
 ``` r
 sim_regression(n = 14, beta0 = 24)
@@ -187,4 +187,114 @@ sim_regression(n = 14, beta0 = 24)
     ## # A tibble: 1 x 2
     ##   beta0_hat beta1_hat
     ##       <dbl>     <dbl>
-    ## 1      23.0      3.42
+    ## 1      24.7      2.44
+
+## Scrape lots of napoleon
+
+``` r
+url = "https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=1"
+
+dynamite_html = read_html(url)
+
+review_titles = 
+  dynamite_html %>%
+  html_nodes("#cm_cr-review_list .review-title") %>%
+  html_text()
+
+review_stars = 
+  dynamite_html %>%
+  html_nodes("#cm_cr-review_list .review-rating") %>%
+  html_text()
+
+review_text = 
+  dynamite_html %>%
+  html_nodes(".review-text-content span") %>%
+  html_text()
+
+reviews = tibble(
+  title = review_titles,
+  stars = review_stars,
+  text = review_text
+)
+```
+
+Now as a function
+
+``` r
+read_page_reviews = function(page_url) {
+  
+  dynamite_html = read_html(page_url)
+  
+  review_titles = 
+    dynamite_html %>%
+    html_nodes("#cm_cr-review_list .review-title") %>%
+    html_text()
+  review_stars = 
+    dynamite_html %>%
+    html_nodes("#cm_cr-review_list .review-rating") %>%
+    html_text()
+  
+  review_text = 
+    dynamite_html %>%
+    html_nodes(".review-text-content span") %>%
+    html_text()
+  
+  reviews = tibble(
+    title = review_titles,
+    stars = review_stars,
+    text = review_text
+  )
+  
+  reviews
+  
+}
+```
+
+Now i can read a lot of page reviews\! Although I’m back to
+copy-and-pasting code …
+
+``` r
+read_page_reviews("https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=1")
+```
+
+    ## # A tibble: 0 x 3
+    ## # ... with 3 variables: title <chr>, stars <chr>, text <chr>
+
+``` r
+read_page_reviews("https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=2")
+```
+
+    ## # A tibble: 0 x 3
+    ## # ... with 3 variables: title <chr>, stars <chr>, text <chr>
+
+``` r
+read_page_reviews("https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=3")
+```
+
+    ## # A tibble: 0 x 3
+    ## # ... with 3 variables: title <chr>, stars <chr>, text <chr>
+
+``` r
+read_page_reviews("https://www.amazon.com/product-reviews/B00005JNBQ/ref=cm_cr_arp_d_viewopt_rvwer?ie=UTF8&reviewerType=avp_only_reviews&sortBy=recent&pageNumber=4")
+```
+
+    ## # A tibble: 0 x 3
+    ## # ... with 3 variables: title <chr>, stars <chr>, text <chr>
+
+## Scoping
+
+Mean example …
+
+``` r
+f = function(x) {
+  z = x + y
+  z
+}
+
+x = 1
+y = 2
+
+f(x = 2)
+```
+
+    ## [1] 4
