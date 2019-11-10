@@ -3,8 +3,6 @@ title: "Iteration and List Cols"
 author: "Xun Wang"
 date: "10/29/2019"
 output: github_document
-editor_options: 
-  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
